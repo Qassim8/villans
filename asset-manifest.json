@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/villans/static/css/main.5570763f.css",
+    "main.js": "/villans/static/js/main.fef213e5.js",
+    "static/js/453.6b15bb21.chunk.js": "/villans/static/js/453.6b15bb21.chunk.js",
+    "static/media/pexels-colon-freld-2373201.jpg": "/villans/static/media/pexels-colon-freld-2373201.c55bb5523f708c6680a1.jpg",
+    "static/media/fa-solid-900.ttf": "/villans/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/villans/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/villans/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/villans/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/villans/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/booking_13061530.png": "/villans/static/media/booking_13061530.d5e08c3e075361044001.png",
+    "static/media/card_11041055.png": "/villans/static/media/card_11041055.7255b8f772d0857561fb.png",
+    "static/media/fa-regular-400.woff2": "/villans/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/hotel_13061449.png": "/villans/static/media/hotel_13061449.924f6ea74a04eb368369.png",
+    "static/media/online-booking_13061499.png": "/villans/static/media/online-booking_13061499.fbc5a669b1bbbf730f0a.png",
+    "static/media/card_11041038.png": "/villans/static/media/card_11041038.022e61183620bc0a83b4.png",
+    "static/media/paypal_349247.png": "/villans/static/media/paypal_349247.d58b3efca999db71a508.png",
+    "static/media/fa-v4compatibility.ttf": "/villans/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/villans/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/villans/index.html",
+    "main.5570763f.css.map": "/villans/static/css/main.5570763f.css.map",
+    "main.fef213e5.js.map": "/villans/static/js/main.fef213e5.js.map",
+    "453.6b15bb21.chunk.js.map": "/villans/static/js/453.6b15bb21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5570763f.css",
+    "static/js/main.fef213e5.js"
+  ]
+}
