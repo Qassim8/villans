@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .between {
+    @apply flex justify-between items-center;
+  }
+  .overlay {
+    @apply before:absolute before:top-0 before:start-0 before:h-full before:w-full before:bg-slate-900/60 before:rounded-lg
+  }
+  .dark-overlay {
+    @apply before:fixed before:top-0 before:start-0 before:h-screen before:w-full before:bg-slate-900/80 before:z-[1000]
+  }
+  .nav-link {
+    @apply block text-[10px] md:text-[14px] text-white no-underline py-5 duration-200 hover:bg-blue-800;
+  }
+  .featuer-box{
+    @apply  flex flex-row md:flex-col items-center gap-5 sm:text-center p-5 rounded duration-300 hover:shadow-2xl
+  }
+  .auth-input{
+    @apply mx-auto my-3 py-2 px-3 block md:w-[300px] rounded border border-slate-300 outline-none duration-300 placeholder:duration-500 focus:placeholder:opacity-0
+  }
+  .image-effects{
+    @apply max-w-full h-full rounded-md hover:rotate-6 hover:scale-125 duration-200
+  }
+  .hash-link {
+    @apply block text-[10px] md:text-[14px] text-slate-500 no-underline py-5  duration-200 hover:text-blue-600;
+  }
+  .booking-input{
+    @apply py-1 px-3 mt-1 mb-3 w-full rounded border border-slate-300 outline-none placeholder:text-[14px] focus:placeholder:opacity-0 placeholder:duration-300
+  }
+}
+
+body{
+  scroll-behavior: smooth;
+}
+
+footer .active{
+  font-weight: bold;
+  background-color: rgba(131, 163, 250, 0.774);
+}
+.book .active{
+  border-bottom: 1px solid rgb(32, 32, 32);
+}
+.box-shadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.contain {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .contain {
+    width: 760px;
+  }
+}
+@media (min-width: 992px) {
+  .contain {
+    width: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  .contain {
+    width: 1190px;
+  }
+}
+.back-first {
+  background-image: url("./hotels img/pexels-colon-freld-2373201.jpg");
+  background-size: cover;
+}
+.sign-background {
+  background-image: url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+}
+
+/* OpenStreetMap Dimension*/
+.leaflet-container {
+  height: 250px;
+  border: 2px solid rgb(102, 152, 245);
+  border-radius: 5px;
+}
