@@ -8,7 +8,7 @@ const Header = () => {
     <>
       <header className="bg-white shadow-md z-20">
         <nav className="contain between py-3">
-          <Link to={"/"} className="no-underline text-slate-800 text-2xl">
+          <Link to={"/villans"} className="no-underline text-slate-800 text-2xl">
             Villans
           </Link>
           {userToken ? (

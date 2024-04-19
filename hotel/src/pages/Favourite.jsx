@@ -80,7 +80,7 @@ const Favorite = () =>{
           <div className="relative text-center top-1/2 translate-y-1/2">
             <i className="fa-solid fa-exclamation fa-2x py-3 px-6 border-[3px] border-blue-300 text-blue-300 mb-5 rounded-full animate-bounce"></i>
             <p className="text-slate-500 font-bold">
-              Your favorite list is empty please add some items
+              Please add some items
             </p>
           </div>
         ) : (

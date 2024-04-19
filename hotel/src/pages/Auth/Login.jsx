@@ -31,7 +31,7 @@ const Login = () => {
 
   useEffect(() => {
     if (userInfo) {
-      navigate("/");
+      navigate("/villans");
       dispatch(clearSucces());
       setShow(false)
     }
@@ -97,8 +97,8 @@ const Login = () => {
                   )}
                   <div className="block md:hidden">
                     <p className="py-2">or</p>
-                    <Link to={"/register"} className="text-underline">
-                      create new account
+                    <Link to={"/register"} className="text-blue-500 underline">
+                      Signup
                     </Link>
                   </div>
                 </form>

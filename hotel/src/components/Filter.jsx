@@ -95,7 +95,7 @@ const Filter = ({ place, rating, pricing}) => {
       </div>
       <div
         className={` md:hidden bg-blue-500 rounded-sm fixed top-1/2 -translate-y-1/2 left-0 ${
-          display && "left-[96%]"
+          display && "left-[95%]"
         } cursor-pointer duration-200 z-20`}
         onClick={() => setDisplay(!display)}
       >

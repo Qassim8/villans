@@ -117,13 +117,13 @@ const RoomDetails = () => {
             to={`/hotels/${roomInfo?.hotelId._id}/${roomInfo?._id}/reserv`}
             className="text-[14px] font-bold px-10 sm:px-32 py-3 bg-blue-600 text-white rounded-sm duration-200 hover:bg-blue-700"
           >
-            Reserve now
+            Book now
           </Link>:
           <Button
           onClick={open}
             className="text-[14px] px-10 sm:px-32 py-3 bg-blue-600 text-white rounded-sm duration-200 hover:bg-blue-700"
           >
-            Reserve now
+            Book now
           </Button>}
         </div>
       </section>)}

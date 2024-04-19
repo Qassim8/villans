@@ -19,7 +19,7 @@
     @apply  flex flex-row md:flex-col items-center gap-5 sm:text-center p-5 rounded duration-300 hover:shadow-2xl
   }
   .auth-input{
-    @apply mx-auto my-3 py-2 px-3 block md:w-[300px] rounded border border-slate-300 outline-none duration-300 placeholder:duration-500 focus:placeholder:opacity-0
+    @apply mx-auto my-3 py-2 px-1 md:px-3 block w-[200px] md:w-[300px] rounded border border-slate-300 outline-none duration-300 placeholder:duration-500 focus:placeholder:opacity-0
   }
   .image-effects{
     @apply max-w-full h-full rounded-md hover:rotate-6 hover:scale-125 duration-200

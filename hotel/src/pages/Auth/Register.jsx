@@ -9,45 +9,43 @@ import { useFormik } from "formik";
 import { RegisterSchema } from "../../utils/FormSchema";
 
 const Register = () => {
-
   const [show, setShow] = useState(false);
-  const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false);
   const dispatch = useDispatch();
   const { loading, success, error } = useSelector((state) => state.auth);
 
-      const formik = useFormik({
-        initialValues: {
-          username: "",
-          email: "",
-          password: "",
-          role: "user"
-        },
-        validationSchema: RegisterSchema,
-        onSubmit: (values) => {
-          dispatch(
-            userRegister({
-              username: values.username,
-              email: values.email,
-              password: values.password,
-              role: values.role
-            })
-          );
-        },
-      });
+  const formik = useFormik({
+    initialValues: {
+      username: "",
+      email: "",
+      password: "",
+      role: "user",
+    },
+    validationSchema: RegisterSchema,
+    onSubmit: (values) => {
+      dispatch(
+        userRegister({
+          username: values.username,
+          email: values.email,
+          password: values.password,
+          role: values.role,
+        })
+      );
+    },
+  });
   useEffect(() => {
     if (success) {
       setShow(true);
-      setVisible(false)
+      setVisible(false);
     } else if (error) {
-      setVisible(true)
+      setVisible(true);
     }
   }, [success, error]);
 
   const close = useCallback(() => {
     dispatch(clearSucces());
-    setShow(false)
+    setShow(false);
   }, [dispatch]);
-
 
   return (
     <>
@@ -114,14 +112,14 @@ const Register = () => {
                       {formik.errors.email}
                     </div>
                   ) : null}
-                  <input
-                    type="password"
-                    className="auth-input"
-                    placeholder="**********"
-                    name="password"
-                    onChange={formik.handleChange}
-                    value={formik.values.password}
-                  />
+                    <input
+                      type="password"
+                      className="auth-input mt-0"
+                      placeholder="**********"
+                      name="password"
+                      onChange={formik.handleChange}
+                      value={formik.values.password}
+                    />
                   {formik.errors.password && formik.touched.password ? (
                     <div className="text-red-500 text-[12px] mb-3 me-1 text-start ms-7">
                       {formik.errors.password}
@@ -144,7 +142,7 @@ const Register = () => {
                   <div className="block md:hidden">
                     <p className="py-2">or</p>
                     <Link to={"/login"} className="text-blue-500 underline">
-                      signin
+                      Signin
                     </Link>
                   </div>
                 </form>

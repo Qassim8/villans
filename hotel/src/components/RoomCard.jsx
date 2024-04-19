@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { getRooms } from "../store/slices/room/room.apis";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
-import { clearState } from "../store/slices/room/roomSlice";
 
 const RoomCard = ({id}) =>{
 

@@ -14,7 +14,7 @@ const RootLayout = () => {
             <h1 className="text-[25px] md:text-[40px]">
               Book your stay with Villans
             </h1>
-            <p>1,386 rooms around UAE are waiting for you!</p>
+            <p className="text-[13px] md:text-[18px]">1,386 rooms around UAE are waiting for you!</p>
           </div>
           <div className="absolute -bottom-5 md:-bottom-10 start-1/2 -translate-x-1/2 md:w-[600px] flex justify-center items-center p-3 bg-white shadow-2xl rounded-full duration-100">
             <div className="px-3 md:px-6 border-r border-slate-400">

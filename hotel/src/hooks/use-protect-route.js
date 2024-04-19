@@ -19,7 +19,7 @@ const useProtectRoute = () =>{
     }
     const logUserOut = useCallback(() =>{
         dispatch(logOut())
-        navigate('/')
+        navigate('/villans')
     },[navigate, dispatch])
 
     return {userToken, logUserOut, show, open, close}

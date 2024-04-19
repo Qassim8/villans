@@ -14,12 +14,6 @@ const NextBookingTable = () => {
   const [popup, setPopup] = useState({show: false, id: null});
   const dispatch = useDispatch();
 
-  const deleteBook = (id) => {
-    if (window.confirm(`Do You Realy Want To Delete This Booking`)) {
-      dispatch(deleteBooking(id));
-    }
-  };
-
   const handleDelete = (id) =>{
     setPopup({
       show: true,
@@ -156,8 +150,8 @@ const NextBookingTable = () => {
         </Card>
       ) : (
         <div className="fixed text-center top-1/2 -translate-y-1/2 end-1/2 translate-x-1/2">
-          <i className="fa-solid fa-calendar fa-3x text-blue-500 mb-5"></i>
-          <p className="text-[30px]">You are not booking yet </p>
+          <i className="fa-solid fa-calendar md:fa-3x text-blue-500 mb-5"></i>
+          <p className="md:text-[30px]">You are not booking yet </p>
         </div>
       )}
     </>

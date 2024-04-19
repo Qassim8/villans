@@ -98,8 +98,8 @@ const PrevBookingTable = () => {
         </Card>
       ) : (
         <div className="fixed text-center top-1/2 -translate-y-1/2 end-1/2 translate-x-1/2">
-          <i className="fa-solid fa-calendar fa-3x text-blue-500 mb-5"></i>
-          <h3 className="text-[30px]">You do not have previous booking </h3>
+          <i className="fa-solid fa-calendar md:fa-3x text-blue-500 mb-5"></i>
+          <h3 className="md:text-[30px]">You do not have previous booking </h3>
         </div>
       )}
     </>

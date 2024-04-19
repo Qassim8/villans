@@ -12,7 +12,6 @@ const HotelCard = ({ spinning, hotel }) => {
   
   const itemsId = JSON.parse(localStorage.getItem("favorites"));
   
-
   const handelFavorite = useCallback(
     (id) => {
       if (itemsId?.includes(id)) {

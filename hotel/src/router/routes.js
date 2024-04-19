@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
     element: <NotFoundPage />
   },
   {
-    path: "/",
+    path: "/villans",
     element: <RootLayout />,
     children: [{ index: true, element: <RootLayout /> }],
   },
