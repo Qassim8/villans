@@ -6,44 +6,51 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const Hotels = () => {
-
   const [hotels, setHotels] = useState();
   const [spinning, setSpinning] = useState(false);
   const [address, setAddress] = useState("");
-  
-  useEffect(() =>{
-    getHotels()
-    // eslint-disable-next-line
-  },[address])
+  const [rate, setRate] = useState("");
 
   const getHotels = async () => {
-    setSpinning(true)
+    setSpinning(true);
     await axios
-      .get(`https://hotel-booking-api-wnq6.onrender.com/hotels?address=${address}`)
-      .then(
-        (response) => setHotels(response.data.hotels)).then(() => setSpinning(false)).catch((response) => {return <p>{response.error}</p>});
-  }
-
-    const filterLocation = (location) => {
-      const newItems = hotels?.filter((value) => {
-        return value.address === location;
+      .get(
+        `https://hotel-booking-api-wnq6.onrender.com/hotels?address=${address}`
+      )
+      .then((response) => setHotels(response.data.hotels))
+      .then(() => setSpinning(false))
+      .catch((response) => {
+        return <p>{response.error}</p>;
       });
-      setHotels(newItems);
-    };
+  };
 
-    const filterRating = (rate) => {
-      const newItems = hotels?.filter((value) => {
-        return value.rate === rate;
+  useEffect(() => {
+    getHotels();
+    // eslint-disable-next-line
+  }, [address]);
+
+  const getRates = async () => {
+    setSpinning(true);
+    await axios
+      .get(`https://hotel-booking-api-wnq6.onrender.com/hotels?rate=${rate}`)
+      .then((response) => setHotels(response.data.hotels))
+      .then(() => setSpinning(false))
+      .catch((response) => {
+        return <p>{response.error}</p>;
       });
-      setHotels(newItems);
-    };
+  };
 
-    const filterPrice = (min, max) =>{
-      const newItems = hotels?.filter((value) =>{
-        return value.price > min && value.price <= max
-      })
-      setHotels(newItems)
-    }
+  useEffect(() => {
+    getRates();
+    // eslint-disable-next-line
+  }, [rate]);
+
+  const filterPrice = (min, max) => {
+    const newItems = hotels?.filter((value) => {
+      return value.price > min && value.price <= max;
+    });
+    setHotels(newItems);
+  };
 
   return (
     <>
@@ -52,13 +59,13 @@ const Hotels = () => {
       <section className="">
         <div className="contain">
           <div className="md:flex gap-5">
-            <Filter
-              place={setAddress}
-              rating={filterRating}
-              pricing={filterPrice}
-            />
+            <Filter place={setAddress} rating={setRate} pricing={filterPrice} />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full md:w-[70%] pt-5 pb-20">
-              <HotelCard spinning={spinning} hotel={hotels} getHotels={getHotels} />
+              <HotelCard
+                spinning={spinning}
+                hotel={hotels}
+                getHotels={getHotels}
+              />
             </div>
           </div>
         </div>

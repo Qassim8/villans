@@ -2,7 +2,7 @@ import { Input } from "@material-tailwind/react";
 import { useState } from "react";
 import useHotelInfo from "../hooks/use-hotel-info";
 
-const Filter = ({ place, rating, pricing}) => {
+const Filter = ({ place, rating, pricing }) => {
   const [display, setDisplay] = useState(false);
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
@@ -26,7 +26,7 @@ const Filter = ({ place, rating, pricing}) => {
   const rate = rates?.map((rate, index) => {
     return (
       <label className="flex items-center text-[14px]" key={index}>
-        <Input type="checkbox" value={rate} onClick={() => rating(rate)} />
+        <Input type="radio" name='rate' onClick={() => rating(rate)} />
         <span className="mx-1">{rate}</span>
         <i className="fa-solid fa-star text-blue-400 text-[10px]"></i>
       </label>
