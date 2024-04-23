@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/villans/static/css/main.5570763f.css",
-    "main.js": "/villans/static/js/main.fef213e5.js",
+    "main.css": "/villans/static/css/main.c94834c1.css",
+    "main.js": "/villans/static/js/main.3a1f08a5.js",
     "static/js/453.6b15bb21.chunk.js": "/villans/static/js/453.6b15bb21.chunk.js",
     "static/media/pexels-colon-freld-2373201.jpg": "/villans/static/media/pexels-colon-freld-2373201.c55bb5523f708c6680a1.jpg",
     "static/media/fa-solid-900.ttf": "/villans/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -19,12 +19,12 @@
     "static/media/fa-v4compatibility.ttf": "/villans/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/villans/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/villans/index.html",
-    "main.5570763f.css.map": "/villans/static/css/main.5570763f.css.map",
-    "main.fef213e5.js.map": "/villans/static/js/main.fef213e5.js.map",
+    "main.c94834c1.css.map": "/villans/static/css/main.c94834c1.css.map",
+    "main.3a1f08a5.js.map": "/villans/static/js/main.3a1f08a5.js.map",
     "453.6b15bb21.chunk.js.map": "/villans/static/js/453.6b15bb21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5570763f.css",
-    "static/js/main.fef213e5.js"
+    "static/css/main.c94834c1.css",
+    "static/js/main.3a1f08a5.js"
   ]
 }
