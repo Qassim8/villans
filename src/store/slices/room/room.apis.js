@@ -4,7 +4,7 @@ import axios from "axios";
 export const getRooms = createAsyncThunk('room/getRooms', async(_,{rejectWithValue}) => {
     try{
         const response = await axios.get(
-        "https://hotel-booking-api-wnq6.onrender.com/rooms"
+          "https://hotel-booking-api-theta.vercel.app/rooms"
         );
         const data = await response.data;
         return data;
@@ -14,11 +14,13 @@ export const getRooms = createAsyncThunk('room/getRooms', async(_,{rejectWithVal
 
 export const getRoomId = createAsyncThunk('room/getRoomId', async(id, {rejectWithValue}) => {
     try{
-        const response = await axios.get(
-        `https://hotel-booking-api-wnq6.onrender.com/rooms/${id}`
-        );
-        const data = await response.data;
-        return data;
+        if (id) {
+            const response = await axios.get(
+              `https://hotel-booking-api-theta.vercel.app/rooms/${id}`
+            );
+            const data = await response.data;
+            return data;
+        }
     }catch(error){
         return rejectWithValue(error.message)}
 })

@@ -13,7 +13,7 @@ export const userRegister = createAsyncThunk(
         },
       };
       const response = await axios.post(
-        "https://hotel-booking-api-wnq6.onrender.com/auth/register",
+        "https://hotel-booking-api-theta.vercel.app/auth/register",
         { username, email, password, role },
         head
       );
@@ -39,7 +39,7 @@ export const userLogin = createAsyncThunk(
         },
       };
       const response = await axios.post(
-        "https://hotel-booking-api-wnq6.onrender.com/auth/login",
+        "https://hotel-booking-api-theta.vercel.app/auth/login",
         { email, password },
         head
       );

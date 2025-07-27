@@ -6,7 +6,7 @@ export const getHotels = createAsyncThunk(
   async (_, { rejectedWithValue }) => {
     try {
       const response = await axios.get(
-        "https://hotel-booking-api-wnq6.onrender.com/hotels"
+        "https://hotel-booking-api-theta.vercel.app/hotels"
       );
       const data = await response.data;
       if (response.status === 200) {
@@ -24,7 +24,7 @@ export const getHotelId = createAsyncThunk(
     try {
       if (id) {
         const response = await axios.get(
-          `https://hotel-booking-api-wnq6.onrender.com/hotels/${id}`
+          `https://hotel-booking-api-theta.vercel.app/hotels/${id}`
         );
         const data = await response.data;
         return data;

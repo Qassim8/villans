@@ -20,7 +20,7 @@ export const newPay = createAsyncThunk(
         },
       };
       const response = await axios.post(
-        "https://hotel-booking-api-wnq6.onrender.com/payment",
+        "https://hotel-booking-api-theta.vercel.app/payment",
         items,
         head
       );

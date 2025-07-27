@@ -26,7 +26,7 @@ export const newBooking = createAsyncThunk(
         },
       };
         const response = await axios.post(
-          "https://hotel-booking-api-wnq6.onrender.com/booking",
+          "https://hotel-booking-api-theta.vercel.app/booking",
           items,
           head
         );
@@ -49,7 +49,7 @@ export const getBooking = createAsyncThunk(
         },
       };
       const response = await axios.get(
-        `https://hotel-booking-api-wnq6.onrender.com/booking?userId=${userId}`,
+        `https://hotel-booking-api-theta.vercel.app/booking?userId=${userId}`,
         head
       );
       const data = await response.data
@@ -69,7 +69,7 @@ export const getBook = createAsyncThunk('booking/getBook', async(id, {rejectWith
       },
     };
     const response = await axios.get(
-      `https://hotel-booking-api-wnq6.onrender.com/booking/${id}`,
+      `https://hotel-booking-api-theta.vercel.app/booking/${id}`,
       head
     );
     const data = await response.data;
@@ -93,7 +93,7 @@ export const updateBooking = createAsyncThunk(
         },
       };
       const response = await axios.put(
-        `https://hotel-booking-api-wnq6.onrender.com/booking/${items.id}`,
+        `https://hotel-booking-api-theta.vercel.app/booking/${items.id}`,
         items,
         head
       );
@@ -114,7 +114,7 @@ export const deleteBooking = createAsyncThunk('booking/deleteBooking', async(id,
       },
     };
     await axios.delete(
-      `https://hotel-booking-api-wnq6.onrender.com/booking/${id}`,
+      `https://hotel-booking-api-theta.vercel.app/booking/${id}`,
       head
     );
     return id;
