@@ -1,7 +1,6 @@
 {
   "name": "use-effect",
   "version": "0.1.0",
-  "homepage": "https://Qassim8.github.io/villans",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
